@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>5 Signs Your Manifestation is Coming — Manifestation Hub</title>
+<meta name="description" content="Wondering if the law of attraction is working? Here are 5 powerful signs your manifestation is close. Learn how to recognize them and speed up your results.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+:root{
+  --ink:#0a0612;
+  --ink-2:#13091f;
+  --violet:#7b2ff7;
+  --violet-soft:#9d5cff;
+  --pink:#ff5fa2;
+  --gold:#e8c468;
+  --gold-bright:#f4d77a;
+  --cream:#f5ecd9;
+  --text:#e9e0f5;
+  --text-soft:#a89bbf;
+  --text-dim:#7a6b92;
+  --line:rgba(232,196,104,.14);
+}
+html{ scroll-behavior:smooth; }
+body{
+  font-family:'Manrope',sans-serif;
+  background:var(--ink);
+  color:var(--text);
+  line-height:1.8;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+a{ text-decoration:none; color:inherit; }
+.serif{ font-family:'Cormorant Garamond',serif; }
+.container{ max-width:760px; margin:0 auto; padding:0 28px; }
+
+/* ORBS */
+.orbs{ position:fixed; inset:0; z-index:0; overflow:hidden; pointer-events:none; }
+.orb{ position:absolute; border-radius:50%; filter:blur(90px); opacity:.35; }
+.orb1{ width:480px; height:480px; background:#5a1dd6; top:-160px; right:-140px; animation:float1 20s ease-in-out infinite; }
+.orb2{ width:380px; height:380px; background:#ff5fa2; bottom:10%; left:-120px; animation:float2 24s ease-in-out infinite; }
+@keyframes float1{ 0%,100%{ transform:translate(0,0); } 50%{ transform:translate(-50px,40px); } }
+@keyframes float2{ 0%,100%{ transform:translate(0,0); } 50%{ transform:translate(40px,-30px); } }
+
+/* NAV */
+.nav{
+  position:fixed; top:0; left:0; right:0; z-index:100;
+  transition:all .4s ease;
+}
+.nav.scrolled{
+  background:rgba(10,6,18,.72);
+  backdrop-filter:blur(18px);
+  border-bottom:1px solid var(--line);
+}
+.nav .container{
+  display:flex; align-items:center; justify-content:space-between;
+  padding-top:18px; padding-bottom:18px;
+}
+.nav.scrolled .container{ padding-top:14px; padding-bottom:14px; }
+.brand{ display:flex; align-items:center; gap:12px; }
+.brand .logo-mark{ width:34px; height:34px; border-radius:50%; }
+.brand .brand-name{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.3rem; font-weight:600;
+  background:linear-gradient(135deg,var(--gold-bright),var(--cream));
+  -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+}
+.back-btn{
+  font-size:.82rem; font-weight:600; letter-spacing:.5px; text-transform:uppercase;
+  padding:10px 22px; border-radius:50px;
+  background:linear-gradient(135deg,var(--gold),var(--gold-bright));
+  color:var(--ink); transition:transform .25s;
+}
+.back-btn:hover{ transform:translateY(-2px); }
+
+/* HEADER */
+.head{
+  position:relative; z-index:2;
+  background:linear-gradient(180deg,rgba(10,6,18,0) 0%, rgba(10,6,18,.5) 100%);
+  padding:140px 0 60px; text-align:center;
+}
+.head .tag{
+  display:inline-block;
+  background:rgba(232,196,104,.08); border:1px solid var(--line);
+  padding:7px 20px; border-radius:50px;
+  font-size:.72rem; font-weight:600; letter-spacing:2px; text-transform:uppercase;
+  color:var(--gold-bright); margin-bottom:28px;
+}
+.head h1{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(2rem,5vw,3.2rem); font-weight:600; line-height:1.1; letter-spacing:-.5px;
+  max-width:680px; margin:0 auto 20px;
+}
+.head h1 em{
+  font-style:italic;
+  background:linear-gradient(120deg,var(--gold-bright),var(--pink));
+  -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+}
+.head .meta{ font-size:.85rem; color:var(--text-dim); }
+
+/* ARTICLE */
+.article{ position:relative; z-index:2; padding:50px 0 30px; }
+.intro{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.4rem; font-weight:500; line-height:1.5;
+  color:var(--cream); margin-bottom:34px;
+}
+.article p{ margin-bottom:20px; color:var(--text-soft); font-size:1.05rem; font-weight:300; }
+.article strong{ color:var(--text); font-weight:600; }
+.article h2{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.7rem; margin-top:48px; margin-bottom:16px;
+  color:var(--cream); font-weight:600; display:flex; align-items:center; gap:14px;
+}
+.article h2 .num{
+  display:inline-flex; align-items:center; justify-content:center;
+  min-width:40px; height:40px;
+  background:linear-gradient(135deg,var(--gold),var(--gold-bright));
+  color:var(--ink); border-radius:50%; font-size:1.1rem; font-family:'Manrope',sans-serif; font-weight:700;
+}
+.article ul{ margin:0 0 24px 4px; list-style:none; }
+.article ul li{ position:relative; padding-left:30px; margin-bottom:12px; color:var(--text-soft); font-size:1rem; font-weight:300; }
+.article ul li strong{ color:var(--gold-bright); }
+.article ul li::before{
+  content:''; position:absolute; left:0; top:7px; width:14px; height:14px;
+  background:linear-gradient(135deg,var(--gold),var(--gold-bright));
+  border-radius:50%; box-shadow:0 0 10px rgba(232,196,104,.4);
+}
+.article ul li::after{ content:'✓'; position:absolute; left:3px; top:4px; color:var(--ink); font-size:.6rem; font-weight:900; }
+
+/* HIGHLIGHT */
+.highlight{
+  position:relative;
+  background:linear-gradient(135deg,rgba(232,196,104,.06),rgba(255,95,162,.04));
+  border-left:3px solid var(--gold);
+  border-radius:14px; padding:28px 32px; margin:34px 0;
+}
+.highlight p{
+  margin:0; font-family:'Cormorant Garamond',serif;
+  font-size:1.25rem; font-style:italic; color:var(--cream); font-weight:500; line-height:1.4;
+}
+
+/* CTA */
+.cta-box{
+  position:relative; overflow:hidden;
+  background:linear-gradient(135deg,rgba(123,47,247,.16),rgba(255,95,162,.1));
+  border:1px solid rgba(232,196,104,.25);
+  border-radius:28px; padding:44px 36px; text-align:center; margin:44px 0;
+}
+.cta-box::before{
+  content:''; position:absolute; width:300px; height:300px; border-radius:50%;
+  background:radial-gradient(circle,rgba(232,196,104,.12),transparent 70%);
+  top:-100px; left:50%; transform:translateX(-50%);
+}
+.cta-box .icon{ font-size:2rem; color:var(--gold-bright); margin-bottom:16px; position:relative; }
+.cta-box h3{
+  font-family:'Cormorant Garamond',serif; font-size:1.6rem; font-weight:600;
+  margin-bottom:12px; position:relative; color:var(--cream);
+}
+.cta-box p{ color:var(--text-soft); margin-bottom:26px; font-weight:300; position:relative; font-size:1rem; }
+.cta-btn{
+  display:inline-block;
+  background:linear-gradient(135deg,var(--gold),var(--gold-bright));
+  color:var(--ink); font-weight:700; font-size:1rem; padding:15px 38px;
+  border-radius:50px; box-shadow:0 10px 28px rgba(232,196,104,.3);
+  transition:transform .25s; position:relative;
+}
+.cta-btn:hover{ transform:translateY(-3px); }
+
+/* SHARE */
+.share{ position:relative; z-index:2; text-align:center; padding:40px 0 70px; border-top:1px solid var(--line); margin-top:50px; }
+.share p{ color:var(--text-dim); font-size:.9rem; margin-bottom:16px; }
+.save-btn{
+  display:inline-block; background:#e60023; color:#fff;
+  font-weight:700; font-size:.92rem; padding:13px 32px;
+  border-radius:50px; transition:transform .2s;
+}
+.save-btn:hover{ transform:translateY(-2px); }
+
+/* FOOTER */
+footer{ position:relative; z-index:2; background:var(--ink-2); border-top:1px solid var(--line); padding:40px 0; text-align:center; }
+footer .brand-name{ font-size:1.2rem; color:var(--cream); -webkit-text-fill-color:initial; display:block; margin-bottom:10px; }
+footer p{ font-size:.8rem; color:var(--text-dim); font-weight:300; }
+
+/* REVEAL */
+.reveal{ opacity:0; transform:translateY(30px); transition:opacity .9s ease, transform .9s ease; }
+.reveal.in{ opacity:1; transform:translateY(0); }
+</style>
+</head>
+<body>
+
+<!-- ORBS -->
+<div class="orbs"><div class="orb orb1"></div><div class="orb orb2"></div></div>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <img src="logo-emblem.png" class="logo-mark" alt="logo">
+      <span class="brand-name">Manifestation Hub</span>
+    </a>
+    <a href="index.html" class="back-btn">← Home</a>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<header class="head">
+  <div class="container">
+    <span class="tag">Manifestation Guide</span>
+    <h1>5 Signs Your Manifestation <em>is Coming</em><br>(Don't Ignore #3)</h1>
+    <div class="meta">✦ Manifestation Hub · 6 min read</div>
+  </div>
+</header>
+
+<!-- ARTICLE -->
+<article class="article">
+  <div class="container">
+
+    <p class="intro reveal">
+      You've been doing your affirmations, visualizing your dream life, and following the law of attraction faithfully — but how do you know if it's actually working?
+    </p>
+
+    <p class="reveal">
+      The universe doesn't send a text message when your manifestation is on its way. Instead, it drops subtle <strong>signs and synchronicities</strong> that most people completely miss. If you've been feeling "something is shifting" but can't explain it, read on — because these five signs mean your manifestation is closer than you think.
+    </p>
+
+    <div class="highlight reveal">
+      <p>The moment you start noticing these signs, your manifestation has already begun. Your only job now is to stay positive and not block it with doubt.</p>
+    </div>
+
+    <h2 class="reveal"><span class="num">1</span>You Keep Seeing Repeating Numbers</h2>
+    <p class="reveal">
+      <strong>111, 222, 333, 11:11</strong> — if these numbers keep showing up everywhere (clocks, license plates, receipts, phone battery), pay attention. These are known as <strong>angel numbers</strong>, and they're one of the most common signs that the universe is aligning things in your favor.
+    </p>
+    <ul class="reveal">
+      <li><strong>111</strong> — Your thoughts are manifesting rapidly right now</li>
+      <li><strong>222</strong> — Keep the faith, you're on the right path</li>
+      <li><strong>333</strong> — Ascended masters are guiding you</li>
+      <li><strong>11:11</strong> — A doorway of opportunity is opening</li>
+    </ul>
+    <p class="reveal">When you see these numbers, take a breath, smile, and silently say "thank you." Gratitude accelerates the manifestation process.</p>
+
+    <h2 class="reveal"><span class="num">2</span>You Feel a Strange Sense of Calm</h2>
+    <p class="reveal">
+      Before a manifestation arrives, there's often a wave of unexpected <strong>peace and inner knowing</strong>. You stop obsessing over the outcome. You stop checking your phone every 5 minutes. You just <em>know</em> it's going to happen.
+    </p>
+    <p class="reveal">
+      This calm is not a coincidence. It's your subconscious mind accepting the new reality. When you stop resisting and start <strong>allowing</strong>, you become a magnet for what you desire.
+    </p>
+
+    <h2 class="reveal"><span class="num">3</span>You're Experiencing "Negative" Events (The Final Test)</h2>
+    <p class="reveal">
+      This one surprises everyone. Right before a big manifestation, things sometimes appear to <strong>fall apart</strong>. A fight, a delayed payment, an unexpected expense. This is NOT the universe punishing you.
+    </p>
+    <p class="reveal">
+      This is the <strong>"clearing phase."</strong> The universe is removing people, situations, and energy that don't align with your new reality. It's making space for what you asked for. So if things feel chaotic right now — stay calm. It means your manifestation is RIGHT THERE.
+    </p>
+
+    <div class="highlight reveal">
+      <p>The breakdown always comes before the breakthrough. Hold on — your manifestation is being delivered.</p>
+    </div>
+
+    <h2 class="reveal"><span class="num">4</span>You're Meeting the "Right" People</h2>
+    <p class="reveal">
+      Suddenly you're bumping into people who talk about the exact things you're trying to manifest. A new friend, a helpful colleague, a stranger who gives you advice that feels meant for you. These are not coincidences — they are <strong>orchestrated meetings</strong>.
+    </p>
+    <p class="reveal">
+      The universe uses people as delivery mechanisms. When the right people start entering your life, your manifestation is being set up behind the scenes.
+    </p>
+
+    <h2 class="reveal"><span class="num">5</span>You Feel Inspired to Take Action</h2>
+    <p class="reveal">
+      Manifestation is not just "sit and wait." When it's working, you'll feel a natural urge to <strong>take inspired action</strong> — start that project, send that message, apply for that opportunity. This inner nudge is your intuition guiding you toward your desire.
+    </p>
+    <p class="reveal">Don't ignore it. Inspired action is the bridge between your vision and reality.</p>
+
+    <!-- CTA -->
+    <div class="cta-box reveal">
+      <div class="icon">✦</div>
+      <h3>Want to Speed Up Your Manifestation?</h3>
+      <p>If you're seeing these signs, your energy is READY. The right tool can amplify your results 10x faster. This is the #1 program we recommend for removing money blocks and accelerating abundance.</p>
+      <a href="YOUR-GENIUSWAVE-AFFILIATE-LINK" target="_blank" rel="nofollow noopener sponsored" class="cta-btn">See How It Works →</a>
+    </div>
+
+    <h2 class="reveal">Final Thoughts</h2>
+    <p class="reveal">
+      If you noticed even two or three of these signs, congratulations — your manifestation is already in motion. The most important thing you can do now is <strong>maintain your vibration</strong>. Stay grateful, stay positive, and trust the process.
+    </p>
+    <p class="reveal">
+      And remember: doubt is the only thing that can block your manifestation. Every time fear creeps in, replace it with faith. You've got this. ✦
+    </p>
+
+  </div>
+
+  <div class="share">
+    <div class="container">
+      <p>✦ Found this helpful? Save it for later and share with someone who needs it.</p>
+      <a href="https://pinterest.com/pin/create/button/" target="_blank" class="save-btn">📌 Save to Pinterest</a>
+    </div>
+  </div>
+</article>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <span class="brand-name serif">Manifestation Hub</span>
+    <p>© 2025 Manifestation Hub. This site contains affiliate links. We may earn a commission at no extra cost to you.</p>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 30) nav.classList.add('scrolled');
+    else nav.classList.remove('scrolled');
+  });
+  const reveals = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  reveals.forEach(r => io.observe(r));
+</script>
+
+</body>
+</html>
