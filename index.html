@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Manifestation Hub — Attract Wealth, Love & Your Dream Life</title>
-<meta name="description" content="The world's most-loved manifestation platform. Join 500,000+ people who rewired their reality using science-backed manifestation tools.">
+<meta name="description" content="The world's most-loved manifestation platform. Join 365K+ people who rewired their reality using science-backed manifestation tools.">
 
 <!-- ============ FONTS ============ -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -244,6 +244,8 @@ img{ max-width:100%; display:block; }
 }
 .card ul li::after{ content:'✓'; position:absolute; left:3px; top:4px; color:var(--ink); font-size:.6rem; font-weight:900; }
 .card .btn-gold{ width:100%; justify-content:center; font-size:.88rem; padding:15px; }
+.card-link{ text-decoration:none; color:inherit; }
+.card-link .card{ cursor:pointer; }
 
 /* ============ MANIFESTO / STORY STRIP ============ */
 .manifesto{ position:relative; z-index:2; padding:100px 0; }
@@ -262,9 +264,10 @@ img{ max-width:100%; display:block; }
   -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
 }
 .manifesto .author{ display:flex; align-items:center; gap:16px; }
-.manifesto .author .av{ width:54px; height:54px; border-radius:50%; background:linear-gradient(135deg,var(--violet),var(--pink)); display:flex; align-items:center; justify-content:center; font-weight:700; color:#fff; }
+.manifesto .author .av{ width:54px; height:54px; border-radius:50%; overflow:hidden; }
 .manifesto .author .nm{ font-weight:600; }
 .manifesto .author .rl{ font-size:.85rem; color:var(--text-dim); }
+.manifesto p{ color:var(--text-soft); font-weight:300; font-size:1.06rem; margin-bottom:22px; }
 
 /* ============ TESTIMONIALS ============ */
 .t-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
@@ -365,7 +368,7 @@ footer h4{ color:var(--cream); font-size:.82rem; letter-spacing:1.5px; text-tran
 <header class="hero">
   <div class="container">
     <div class="hero-text">
-      <span class="hero-badge"><span class="dot"></span> Trusted by 500,000+ Manifestors</span>
+      <span class="hero-badge"><span class="dot"></span> Trusted by 365K+ Manifestors</span>
       <h1>Rewrite Your <span class="grad">Reality.</span><br>Attract Everything You Desire.</h1>
       <p class="lead">No rituals. No hype. Just three science-backed tools that rewire the subconscious mind for abundance — recommended by manifestation coaches across 40+ countries.</p>
       <div class="hero-cta">
@@ -373,8 +376,8 @@ footer h4{ color:var(--cream); font-size:.82rem; letter-spacing:1.5px; text-tran
         <a href="#story" class="btn-outline">How It Works</a>
       </div>
       <div class="hero-stats">
-        <div class="stat"><strong>500K+</strong><span>Happy Members</span></div>
-        <div class="stat"><strong>4.9★</strong><span>Average Rating</span></div>
+        <div class="stat"><strong>365K+</strong><span>Happy Members</span></div>
+        <div class="stat"><strong>4.2★</strong><span>Average Rating</span></div>
         <div class="stat"><strong>40+</strong><span>Countries</span></div>
       </div>
     </div>
@@ -406,7 +409,7 @@ footer h4{ color:var(--cream); font-size:.82rem; letter-spacing:1.5px; text-tran
       <div class="quote-mark">“</div>
       <blockquote>You don't attract what you <span class="hl">want.</span> You attract what you <span class="hl">are.</span> The moment we stopped chasing and started rewiring — everything changed.</blockquote>
       <div class="author">
-        <div class="av" style="padding:0; overflow:hidden;"><img src="founder.jpg" alt="Suraj K" style="width:100%; height:100%; object-fit:cover;"></div>
+        <div class="av"><img src="founder.jpg" alt="Suraj K" style="width:100%; height:100%; object-fit:cover;"></div>
         <div>
           <div class="nm">Suraj K.</div>
           <div class="rl">Founder, Manifestation Hub</div>
@@ -414,15 +417,9 @@ footer h4{ color:var(--cream); font-size:.82rem; letter-spacing:1.5px; text-tran
       </div>
     </div>
     <div class="reveal">
-      <p style="color:var(--text-soft); font-weight:300; font-size:1.06rem; margin-bottom:22px;">
-        We built Manifestation Hub after years of testing every program, audio, and ritual on the market. Most were empty promises wrapped in pretty packaging.
-      </p>
-      <p style="color:var(--text-soft); font-weight:300; font-size:1.06rem; margin-bottom:22px;">
-        So we filtered through hundreds of products and kept only the three that produced <strong style="color:var(--cream);">measurable, repeatable results</strong> — tools grounded in neuroscience, frequency therapy, and proven mindset frameworks.
-      </p>
-      <p style="color:var(--text-soft); font-weight:300; font-size:1.06rem;">
-        Today, half a million people use our recommendations to manifest wealth, love, and the freedom they once thought was out of reach.
-      </p>
+      <p>We built Manifestation Hub after years of testing every program, audio, and ritual on the market. Most were empty promises wrapped in pretty packaging.</p>
+      <p>So we filtered through hundreds of products and kept only the three that produced <strong style="color:var(--cream);">measurable, repeatable results</strong> — tools grounded in neuroscience, frequency therapy, and proven mindset frameworks.</p>
+      <p>Today, 365K+ people use our recommendations to manifest wealth, love, and the freedom they once thought was out of reach.</p>
     </div>
   </div>
 </section>
@@ -450,6 +447,7 @@ footer h4{ color:var(--cream); font-size:.82rem; letter-spacing:1.5px; text-tran
           <li>Just 7 minutes daily, even while sleeping</li>
           <li>Developed with neuroscience research</li>
         </ul>
+        <a href="genius-wave-review.html" class="btn-gold" style="background:transparent; border:1px solid var(--line); color:var(--gold-bright); box-shadow:none; margin-bottom:12px;">Read Full Review →</a>
         <a href="YOUR-GENIUSWAVE-AFFILIATE-LINK" target="_blank" rel="nofollow noopener sponsored" class="btn-gold">Get Instant Access →</a>
       </div>
 
@@ -464,6 +462,7 @@ footer h4{ color:var(--cream); font-size:.82rem; letter-spacing:1.5px; text-tran
           <li>Attracts opportunities and synchronicities</li>
           <li>Simple 2-minute daily practice</li>
         </ul>
+        <a href="divine-prayer-review.html" class="btn-gold" style="background:transparent; border:1px solid var(--line); color:var(--gold-bright); box-shadow:none; margin-bottom:12px;">Read Full Review →</a>
         <a href="YOUR-DIVINEPRAYER-AFFILIATE-LINK" target="_blank" rel="nofollow noopener sponsored" class="btn-gold">Get Instant Access →</a>
       </div>
 
@@ -478,6 +477,7 @@ footer h4{ color:var(--cream); font-size:.82rem; letter-spacing:1.5px; text-tran
           <li>Permanently reprograms money mindset</li>
           <li>Instant digital access</li>
         </ul>
+        <a href="manifestation-millionaire-review.html" class="btn-gold" style="background:transparent; border:1px solid var(--line); color:var(--gold-bright); box-shadow:none; margin-bottom:12px;">Read Full Review →</a>
         <a href="YOUR-MANIFESTATIONMILLIONAIRE-AFFILIATE-LINK" target="_blank" rel="nofollow noopener sponsored" class="btn-gold">Get Instant Access →</a>
       </div>
 
@@ -495,29 +495,53 @@ footer h4{ color:var(--cream); font-size:.82rem; letter-spacing:1.5px; text-tran
     </div>
 
     <div class="cards">
-      <a href="signs-manifestation-coming.html" class="card reveal" style="text-decoration:none;">
+      <a href="signs-manifestation-coming.html" class="card-link reveal"><div class="card">
         <div class="rank">01</div>
         <div style="font-size:.72rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--gold-bright); margin-bottom:10px;">Manifestation</div>
         <h3 style="font-size:1.4rem;">5 Signs Your Manifestation is Coming</h3>
-        <p class="review">Wondering if the law of attraction is working? Discover the 5 powerful signs the universe drops when your manifestation is close — and why most people miss them.</p>
+        <p class="review">Wondering if the universe is responding? Here are five quiet signals most people miss — and what to do when you notice them.</p>
         <span style="color:var(--gold-bright); font-weight:600; font-size:.9rem;">Read Article →</span>
-      </a>
+      </div></a>
 
-      <div class="card reveal" style="opacity:.5;">
+      <a href="369-method.html" class="card-link reveal"><div class="card">
         <div class="rank">02</div>
-        <div style="font-size:.72rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--gold-bright); margin-bottom:10px;">Coming Soon</div>
-        <h3 style="font-size:1.4rem;">The 369 Method Complete Guide</h3>
-        <p class="review">The exact Nikola Tesla-inspired technique thousands use to manifest money fast.</p>
-        <span style="color:var(--text-dim); font-weight:600; font-size:.9rem;">Coming Soon</span>
-      </div>
+        <div style="font-size:.72rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--gold-bright); margin-bottom:10px;">Technique</div>
+        <h3 style="font-size:1.4rem;">The 369 Method: A Complete Guide</h3>
+        <p class="review">The Nikola Tesla-inspired technique thousands use to manifest money. Here's exactly how to do it — step by step.</p>
+        <span style="color:var(--gold-bright); font-weight:600; font-size:.9rem;">Read Article →</span>
+      </div></a>
 
-      <div class="card reveal" style="opacity:.5;">
+      <a href="morning-manifestation.html" class="card-link reveal"><div class="card">
         <div class="rank">03</div>
-        <div style="font-size:.72rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--gold-bright); margin-bottom:10px;">Coming Soon</div>
-        <h3 style="font-size:1.4rem;">Morning Manifestation Ritual</h3>
-        <p class="review">A simple 5-minute morning routine to set your energy for abundance all day.</p>
-        <span style="color:var(--text-dim); font-weight:600; font-size:.9rem;">Coming Soon</span>
-      </div>
+        <div style="font-size:.72rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--gold-bright); margin-bottom:10px;">Ritual</div>
+        <h3 style="font-size:1.4rem;">5-Minute Morning Manifestation Ritual</h3>
+        <p class="review">A simple morning routine to set your energy for abundance all day. No special tools required.</p>
+        <span style="color:var(--gold-bright); font-weight:600; font-size:.9rem;">Read Article →</span>
+      </div></a>
+
+      <a href="remove-money-blocks.html" class="card-link reveal"><div class="card">
+        <div class="rank">04</div>
+        <div style="font-size:.72rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--gold-bright); margin-bottom:10px;">Money</div>
+        <h3 style="font-size:1.4rem;">How to Remove Money Blocks Forever</h3>
+        <p class="review">The hidden beliefs keeping money away from you — and a simple process to clear them for good.</p>
+        <span style="color:var(--gold-bright); font-weight:600; font-size:.9rem;">Read Article →</span>
+      </div></a>
+
+      <a href="before-bed-money.html" class="card-link reveal"><div class="card">
+        <div class="rank">05</div>
+        <div style="font-size:.72rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--gold-bright); margin-bottom:10px;">Money</div>
+        <h3 style="font-size:1.4rem;">Do This Before Bed to Attract Money</h3>
+        <p class="review">A 5-minute night routine that programs your subconscious for wealth while you sleep.</p>
+        <span style="color:var(--gold-bright); font-weight:600; font-size:.9rem;">Read Article →</span>
+      </div></a>
+
+      <a href="about.html" class="card-link reveal"><div class="card">
+        <div class="rank">06</div>
+        <div style="font-size:.72rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--gold-bright); margin-bottom:10px;">About</div>
+        <h3 style="font-size:1.4rem;">The Story Behind Manifestation Hub</h3>
+        <p class="review">Why we built this platform and what drives us to help people manifest their dream lives.</p>
+        <span style="color:var(--gold-bright); font-weight:600; font-size:.9rem;">Read Article →</span>
+      </div></a>
     </div>
   </div>
 </section>
@@ -528,7 +552,7 @@ footer h4{ color:var(--cream); font-size:.82rem; letter-spacing:1.5px; text-tran
     <div class="sec-head reveal">
       <span class="sec-eyebrow">Real Transformations</span>
       <h2>Stories That <em>Speak for Themselves</em></h2>
-      <p>Verified experiences from our community of over half a million manifestors worldwide.</p>
+      <p>Verified experiences from our community of manifestors worldwide.</p>
     </div>
 
     <div class="t-grid">
@@ -600,7 +624,7 @@ footer h4{ color:var(--cream); font-size:.82rem; letter-spacing:1.5px; text-tran
         <input type="email" placeholder="Enter your best email..." required>
         <button type="submit" class="btn-gold">Get the Free Journal</button>
       </form>
-      <p class="note">🔒 Trusted by 500,000+ members. No spam — unsubscribe anytime.</p>
+      <p class="note">🔒 Trusted by 365K+ members. No spam — unsubscribe anytime.</p>
     </div>
   </div>
 </section>
@@ -614,7 +638,7 @@ footer h4{ color:var(--cream); font-size:.82rem; letter-spacing:1.5px; text-tran
           <img src="logo-emblem.png" class="logo-mark" alt="logo" style="display:inline-block; vertical-align:middle; margin-right:10px;">
           <span class="brand-name">Manifestation Hub</span>
         </a>
-        <p>The world's most-trusted platform for science-backed manifestation tools. Helping over half a million people across 40+ countries manifest wealth, love, and freedom.</p>
+        <p>The world's most-trusted platform for science-backed manifestation tools. Helping people across 40+ countries manifest wealth, love, and freedom.</p>
         <div class="f-disclaimer">
           <strong style="color:var(--cream);">Affiliate Disclosure:</strong> Manifestation Hub is a participant in affiliate programs including Digistore24 and ClickBank. We may earn a commission on purchases made through our links, at no additional cost to you. Testimonials reflect individual experiences and are not a guarantee of results. This site is for informational purposes only.
         </div>
@@ -622,16 +646,15 @@ footer h4{ color:var(--cream); font-size:.82rem; letter-spacing:1.5px; text-tran
       <div>
         <h4>Explore</h4>
         <a href="#tools">Top Tools</a>
+        <a href="#journal">Journal</a>
         <a href="#story">Our Philosophy</a>
-        <a href="#proof">Reviews</a>
-        <a href="#free">Free Journal</a>
+        <a href="about.html">About</a>
       </div>
       <div>
-        <h4>Company</h4>
-        <a href="#">About Us</a>
-        <a href="#">Contact</a>
-        <a href="#">Pinterest</a>
-        <a href="#">Instagram</a>
+        <h4>Reviews</h4>
+        <a href="genius-wave-review.html">Genius Wave</a>
+        <a href="divine-prayer-review.html">Divine Prayer</a>
+        <a href="manifestation-millionaire-review.html">Manifestation Millionaire</a>
       </div>
       <div>
         <h4>Legal</h4>
@@ -662,5 +685,5 @@ footer h4{ color:var(--cream); font-size:.82rem; letter-spacing:1.5px; text-tran
   reveals.forEach(r => io.observe(r));
 </script>
 
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a116347e8e08efe6',t:'MTc4MjQxMzkyMQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</body>
 </html>
