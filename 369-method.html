@@ -12,46 +12,19 @@
 :root{--ink:#0a0612;--ink-2:#13091f;--violet:#7b2ff7;--pink:#ff5fa2;--gold:#e8c468;--gold-bright:#f4d77a;--cream:#f5ecd9;--text:#e9e0f5;--text-soft:#a89bbf;--text-dim:#7a6b92;--line:rgba(232,196,104,.14);}
 html{scroll-behavior:smooth;}body{font-family:'Manrope',sans-serif;background:var(--ink);color:var(--text);line-height:1.8;overflow-x:hidden;-webkit-font-smoothing:antialiased;}a{text-decoration:none;color:inherit;}img{max-width:100%;display:block;}
 .container{max-width:760px;margin:0 auto;padding:0 28px;}
-
-/* ============ BG IMAGE (full visible, clean, device-fit) ============ */
-.bg-image{position:fixed;inset:0;z-index:0;display:flex;align-items:center;justify-content:center;pointer-events:none;will-change:transform;}
-.bg-image img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;opacity:.22;}
-.bg-overlay{position:fixed;inset:0;z-index:0;pointer-events:none;background:linear-gradient(180deg,rgba(10,6,18,.65) 0%,rgba(10,6,18,.4) 50%,rgba(10,6,18,.7) 100%);}
-
-/* ============ ORBS ============ */
-.orbs{position:fixed;inset:0;z-index:1;overflow:hidden;pointer-events:none;will-change:transform;}
-.orb{position:absolute;border-radius:50%;filter:blur(90px);opacity:.35;}
+.orbs{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none;}.orb{position:absolute;border-radius:50%;filter:blur(90px);opacity:.35;}
 .orb1{width:480px;height:480px;background:#5a1dd6;top:-160px;right:-140px;animation:float1 20s ease-in-out infinite;}
 .orb2{width:380px;height:380px;background:#ff5fa2;bottom:10%;left:-120px;animation:float2 24s ease-in-out infinite;}
 @keyframes float1{0%,100%{transform:translate(0,0);}50%{transform:translate(-50px,40px);}}@keyframes float2{0%,100%{transform:translate(0,0);}50%{transform:translate(40px,-30px);}}
-
-/* ============ STARS ============ */
-.stars{position:fixed;inset:0;z-index:2;overflow:hidden;pointer-events:none;will-change:transform;}
-.star{position:absolute;background:#f4d77a;border-radius:50%;opacity:0;animation:twinkle ease-in-out infinite;box-shadow:0 0 4px #f4d77a;}
-@keyframes twinkle{0%,100%{opacity:0;}50%{opacity:.8;}}
-
-/* ============ SHOOTING STARS ============ */
-.shoot-layer{position:fixed;inset:0;z-index:3;overflow:hidden;pointer-events:none;}
-.shooting-star{position:absolute;width:3px;height:3px;background:#fff;border-radius:50%;opacity:0;}
-.shooting-star::before{content:"";position:absolute;top:50%;right:0;width:140px;height:1.5px;background:linear-gradient(90deg,transparent,rgba(244,215,122,.9),#fff);transform:translateY(-50%);filter:blur(.5px);}
-.shooting-star::after{content:"";position:absolute;top:50%;right:0;width:90px;height:2.5px;background:linear-gradient(90deg,transparent,rgba(255,95,162,.5));transform:translateY(-50%);filter:blur(2px);}
-@keyframes shoot{0%{opacity:0;transform:translate(0,0) rotate(35deg);}4%{opacity:1;}92%{opacity:1;}100%{opacity:0;transform:translate(700px,490px) rotate(35deg);}}
-
-/* ============ NAV ============ */
 .nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:all .4s ease;}.nav.scrolled{background:rgba(10,6,18,.72);backdrop-filter:blur(18px);border-bottom:1px solid var(--line);}.nav .container{display:flex;align-items:center;justify-content:space-between;padding-top:18px;padding-bottom:18px;}
 .brand{display:flex;align-items:center;gap:12px;}.brand .logo-mark{width:34px;height:34px;border-radius:50%;}.brand .brand-name{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;background:linear-gradient(135deg,var(--gold-bright),var(--cream));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;}
 .back-btn{font-size:.82rem;font-weight:600;letter-spacing:.5px;text-transform:uppercase;padding:10px 22px;border-radius:50px;background:linear-gradient(135deg,var(--gold),var(--gold-bright));color:var(--ink);transition:transform .25s;}.back-btn:hover{transform:translateY(-2px);}
-
-/* ============ HEAD ============ */
-.head{position:relative;z-index:5;padding:140px 0 40px;text-align:center;}.head .tag{display:inline-block;background:rgba(232,196,104,.08);border:1px solid var(--line);padding:7px 20px;border-radius:50px;font-size:.72rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--gold-bright);margin-bottom:28px;backdrop-filter:blur(8px);}
-.head h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:600;line-height:1.1;max-width:680px;margin:0 auto 20px;text-shadow:0 4px 30px rgba(0,0,0,.8);}
+.head{position:relative;z-index:2;padding:140px 0 40px;text-align:center;}.head .tag{display:inline-block;background:rgba(232,196,104,.08);border:1px solid var(--line);padding:7px 20px;border-radius:50px;font-size:.72rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--gold-bright);margin-bottom:28px;}
+.head h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:600;line-height:1.1;max-width:680px;margin:0 auto 20px;}
 .head h1 em{font-style:italic;background:linear-gradient(120deg,var(--gold-bright),var(--pink));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;}
 .head .meta{font-size:.85rem;color:var(--text-dim);}
-
-/* ============ ARTICLE ============ */
-.article{position:relative;z-index:5;padding:40px 0 30px;}
-.article .container{background:rgba(10,6,18,.6);backdrop-filter:blur(14px);border:1px solid rgba(232,196,104,.12);border-radius:24px;padding:48px 40px;box-shadow:0 20px 60px rgba(0,0,0,.45);}
-@media(max-width:600px){.article .container{padding:32px 24px;}}
+.article{position:relative;z-index:2;padding:40px 0 30px;}
+.article img{width:100%;border-radius:20px;margin:0 auto 34px;max-width:680px;box-shadow:0 16px 50px rgba(0,0,0,.5);border:1px solid var(--line);}
 .intro{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:500;line-height:1.5;color:var(--cream);margin-bottom:34px;}
 .article p{margin-bottom:20px;color:var(--text-soft);font-size:1.05rem;font-weight:300;}.article strong{color:var(--text);font-weight:600;}
 .article h2{font-family:'Cormorant Garamond',serif;font-size:1.7rem;margin-top:48px;margin-bottom:16px;color:var(--cream);font-weight:600;}
@@ -71,40 +44,20 @@ html{scroll-behavior:smooth;}body{font-family:'Manrope',sans-serif;background:va
 .cta-btn:hover{transform:translateY(-3px);}
 .share{text-align:center;padding:40px 0 70px;border-top:1px solid var(--line);margin-top:50px;}.share p{color:var(--text-dim);font-size:.9rem;margin-bottom:16px;}
 .save-btn{display:inline-block;background:#e60023;color:#fff;font-weight:700;font-size:.92rem;padding:13px 32px;border-radius:50px;}
-footer{position:relative;z-index:5;background:var(--ink-2);border-top:1px solid var(--line);padding:40px 0;text-align:center;}.footer-brand{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--cream);display:block;margin-bottom:10px;}footer p{font-size:.8rem;color:var(--text-dim);}
+footer{background:var(--ink-2);border-top:1px solid var(--line);padding:40px 0;text-align:center;}.footer-brand{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--cream);display:block;margin-bottom:10px;}footer p{font-size:.8rem;color:var(--text-dim);}
 .reveal{opacity:0;transform:translateY(30px);transition:opacity .9s ease,transform .9s ease;}.reveal.in{opacity:1;transform:translateY(0);}
+.stars{position:fixed;inset:0;z-index:1;overflow:hidden;pointer-events:none;}.star{position:absolute;background:#f4d77a;border-radius:50%;opacity:0;animation:twinkle ease-in-out infinite;box-shadow:0 0 4px #f4d77a;}@keyframes twinkle{0%,100%{opacity:0;}50%{opacity:.8;}}.shoot-layer{position:fixed;inset:0;z-index:2;overflow:hidden;pointer-events:none;}.shooting-star{position:absolute;width:3px;height:3px;background:#fff;border-radius:50%;opacity:0;}.shooting-star::before{content:"";position:absolute;top:50%;right:0;width:140px;height:1.5px;background:linear-gradient(90deg,transparent,rgba(244,215,122,.9),#fff);transform:translateY(-50%);filter:blur(.5px);}.shooting-star::after{content:"";position:absolute;top:50%;right:0;width:90px;height:2.5px;background:linear-gradient(90deg,transparent,rgba(255,95,162,.5));transform:translateY(-50%);filter:blur(2px);}@keyframes shoot{0%{opacity:0;transform:translate(0,0) rotate(35deg);}4%{opacity:1;}92%{opacity:1;}100%{opacity:0;transform:translate(700px,490px) rotate(35deg);}}
 </style>
 </head>
 <body>
-
-<!-- BG IMAGE LAYER (3D parallax) -->
-<div class="bg-image" id="bgImage"><img src="img-369.jpg" alt=""></div>
-<div class="bg-overlay"></div>
-
-<!-- ORBS -->
-<div class="orbs" id="orbs"><div class="orb orb1"></div><div class="orb orb2"></div></div>
-
-<!-- STARS -->
-<div class="stars" id="starsLayer"></div>
-
-<!-- SHOOTING STARS -->
-<div class="shoot-layer" id="shootLayer"></div>
-
-<!-- NAV -->
+<div class="orbs"><div class="orb orb1"></div><div class="orb orb2"></div></div>
 <nav class="nav" id="nav"><div class="container"><a href="index.html" class="brand"><img src="logo-emblem.png" class="logo-mark" alt="logo"><span class="brand-name">Manifestation Hub</span></a><a href="index.html" class="back-btn">← Home</a></div></nav>
-
-<!-- HEAD -->
 <header class="head"><div class="container"><span class="tag">Technique</span><h1>The 369 Method:<br><em>A Complete Guide</em></h1><div class="meta">✦ Manifestation Hub · 7 min read</div></div></header>
-
-<!-- ARTICLE -->
-<article class="article">
-  <div class="container">
-
+<article class="article"><div class="container">
+  <img src="img-369.jpg" alt="The 369 Method">
 <p class="intro reveal">If you've spent any time in manifestation circles, you've heard of the 369 method. But most explanations are vague. Here's exactly what it is, why it works, and how to do it — step by step.</p>
 <p class="reveal">The <strong>369 method</strong> is a manifestation technique inspired by inventor Nikola Tesla's famous obsession with the numbers 3, 6, and 9. He believed these numbers held the key to the universe. Modern manifestation practitioners adapted this into a simple writing ritual that helps focus intention and reprogram the subconscious mind.</p>
-
 <div class="formula-box reveal"><div class="formula">3 · 6 · 9</div><div class="label">Write your desire — 3, 6, and 9 times</div></div>
-
 <h2 class="reveal">Why the Numbers Matter</h2>
 <p class="reveal">Each number represents a different layer of intention:</p>
 <ul class="reveal">
@@ -113,9 +66,7 @@ footer{position:relative;z-index:5;background:var(--ink-2);border-top:1px solid 
 <li><strong>9 times</strong> at night — programs the subconscious as you drift into sleep</li>
 </ul>
 <p class="reveal">The repetition isn't arbitrary. Writing something by hand engages different parts of the brain than typing, and doing it consistently builds the neural pathways that make manifestation feel natural rather than forced.</p>
-
 <div class="highlight reveal"><p>The 369 method works because it turns a vague wish into a daily, physical practice. Repetition is how the brain learns anything.</p></div>
-
 <h2 class="reveal">How to Do It — Step by Step</h2>
 <p class="reveal"><strong>Step 1: Choose one clear desire.</strong> Be specific. Instead of "I want money," write "I am grateful I received $5,000 this month."</p>
 <p class="reveal"><strong>Step 2: Phrase it in the present tense.</strong> Write as if it has already happened. This is crucial — the subconscious responds to present-tense statements.</p>
@@ -123,80 +74,28 @@ footer{position:relative;z-index:5;background:var(--ink-2);border-top:1px solid 
 <p class="reveal"><strong>Step 4: Afternoon (6 times).</strong> Around midday, write it 6 times. Reconnect with the feeling.</p>
 <p class="reveal"><strong>Step 5: Night (9 times).</strong> Before bed, write it 9 times. This is the most powerful session — your subconscious processes it all night.</p>
 <p class="reveal"><strong>Step 6: Do it for 33 or 45 days.</strong> Consistency is everything. Commit to the full cycle.</p>
-
 <h2 class="reveal">What to Write — Examples</h2>
 <ul class="reveal">
 <li>"I am so grateful for the unexpected $1,000 that came to me this week."</li>
 <li>"I am thrilled that my dream job offer arrived effortlessly."</li>
 <li>"I am thankful that money flows to me easily and naturally."</li>
 </ul>
-
 <h2 class="reveal">Why Some People See No Results</h2>
 <p class="reveal">The method fails when people treat it as a magic spell. Writing words without feeling is just copying. The <strong>emotion behind the words</strong> is what signals your subconscious to change. If you feel anxious while writing, you're reinforcing lack — not abundance.</p>
 <p class="reveal">Also, manifestation works alongside action. Write your affirmation, then take one small step toward your goal each day.</p>
-
 <div class="cta-box reveal">
 <h3>Want to Amplify Your Results?</h3>
 <p>If you're building a daily manifestation practice, the right audio tool can deepen your focus and remove subconscious resistance. This is the tool I use alongside my 369 practice.</p>
 <a href="https://ingeniuswave.com/DSvsl/#aff=manifestationhub120af9" target="_blank" rel="nofollow noopener sponsored" class="cta-btn">See How It Works →</a>
 </div>
-
 <h2 class="reveal">Final Thoughts</h2>
 <p class="reveal">The 369 method isn't magic, but it is powerful — because it turns manifestation from a passing thought into a consistent, physical ritual. Give it 33 days. Write with feeling. Take small actions. And watch what shifts.</p>
 <p class="reveal">Remember: the goal isn't just to get what you want, but to become the person who naturally attracts it. ✦</p>
-
-  </div>
-  <div class="share"><div class="container"><p>✦ Found this helpful? Save it for later.</p><a href="https://pinterest.com/pin/create/button/" target="_blank" class="save-btn">📌 Save to Pinterest</a></div></div>
+</div>
+<div class="share"><div class="container"><p>✦ Found this helpful? Save it for later.</p><a href="https://pinterest.com/pin/create/button/" target="_blank" class="save-btn">📌 Save to Pinterest</a></div></div>
 </article>
-
 <footer><div class="container"><span class="footer-brand">Manifestation Hub</span><p>© 2025 Manifestation Hub. Contains affiliate links. Results vary and are not guaranteed.</p></div></footer>
-
-<script>
-// Navbar + reveal
-const nav=document.getElementById('nav');window.addEventListener('scroll',()=>{if(window.scrollY>30)nav.classList.add('scrolled');else nav.classList.remove('scrolled');});
-const reveals=document.querySelectorAll('.reveal');const io=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:0.1});reveals.forEach(r=>io.observe(r));
-
-// Stars
-const starsLayer=document.getElementById("starsLayer");for(let i=0;i<60;i++){const s=document.createElement("div");s.className="star";const size=Math.random()*2.5+.5;s.style.width=size+"px";s.style.height=size+"px";s.style.left=Math.random()*100+"%";s.style.top=Math.random()*100+"%";s.style.animationDuration=(Math.random()*3+2)+"s";s.style.animationDelay=(Math.random()*5)+"s";starsLayer.appendChild(s);}
-
-// Shooting stars
-const shootLayer=document.getElementById("shootLayer");function createShootingStar(){const ss=document.createElement("div");ss.className="shooting-star";ss.style.left=(Math.random()*70+2)+"%";ss.style.top=(Math.random()*40+2)+"%";const d=Math.random()*1.2+1;ss.style.animation="shoot "+d+"s ease-in forwards";shootLayer.appendChild(ss);setTimeout(()=>ss.remove(),d*1000+200);}function fireShootingStars(){createShootingStar();if(Math.random()>0.35){setTimeout(createShootingStar,250+Math.random()*400);}if(Math.random()>0.7){setTimeout(createShootingStar,600+Math.random()*400);}const next=Math.random()*2000+1200;setTimeout(fireShootingStars,next);}setTimeout(createShootingStar,500);setTimeout(createShootingStar,1200);setTimeout(fireShootingStars,2200);
-
-// ============ RUBBER BAND MOUSE PARALLAX ============
-// Mouse moves -> elements follow
-// Mouse leaves screen -> everything smoothly returns to center (like rubber band)
-let mx=0,my=0;        // target position (where mouse is)
-let tx=0,ty=0;        // current position (eased)
-let mouseActive=false; // is mouse on screen?
-
-document.addEventListener('mousemove',(e)=>{
-  mx=(e.clientX/window.innerWidth-.5)*2;
-  my=(e.clientY/window.innerHeight-.5)*2;
-  mouseActive=true;
-});
-
-// When mouse LEAVES the window -> target returns to 0 (center)
-document.addEventListener('mouseleave',()=>{mouseActive=false;});
-window.addEventListener('blur',()=>{mouseActive=false;});
-
-function parallaxLoop(){
-  // If mouse is gone, target becomes 0 (rubber band pulls back to center)
-  const targetX = mouseActive ? mx : 0;
-  const targetY = mouseActive ? my : 0;
-
-  // Ease towards target (smooth rubber band effect)
-  tx += (targetX - tx) * 0.05;
-  ty += (targetY - ty) * 0.05;
-
-  // BG image moves subtly (less shift, stays screen-fit)
-  document.getElementById('bgImage').style.transform='translate('+(tx*15)+'px,'+(ty*15)+'px)';
-  // Stars move medium
-  document.getElementById('starsLayer').style.transform='translate('+(tx*18)+'px,'+(ty*18)+'px)';
-  // Orbs move medium
-  document.getElementById('orbs').style.transform='translate('+(tx*20)+'px,'+(ty*20)+'px)';
-
-  requestAnimationFrame(parallaxLoop);
-}
-parallaxLoop();
-</script>
-</body></html>
+<script>const nav=document.getElementById('nav');window.addEventListener('scroll',()=>{if(window.scrollY>30)nav.classList.add('scrolled');else nav.classList.remove('scrolled');});const reveals=document.querySelectorAll('.reveal');const io=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:0.1});reveals.forEach(r=>io.observe(r));const starsLayer=document.getElementById("starsLayer");for(let i=0;i<50;i++){const s=document.createElement("div");s.className="star";const size=Math.random()*2.5+.5;s.style.width=size+"px";s.style.height=size+"px";s.style.left=Math.random()*100+"%";s.style.top=Math.random()*100+"%";s.style.animationDuration=(Math.random()*3+2)+"s";s.style.animationDelay=(Math.random()*5)+"s";starsLayer.appendChild(s);}const shootLayer=document.getElementById("shootLayer");function createShootingStar(){const ss=document.createElement("div");ss.className="shooting-star";ss.style.left=(Math.random()*70+2)+"%";ss.style.top=(Math.random()*40+2)+"%";const d=Math.random()*1.2+1;ss.style.animation="shoot "+d+"s ease-in forwards";shootLayer.appendChild(ss);setTimeout(()=>ss.remove(),d*1000+200);}function fireShootingStars(){createShootingStar();if(Math.random()>0.35){setTimeout(createShootingStar,250+Math.random()*400);}if(Math.random()>0.7){setTimeout(createShootingStar,600+Math.random()*400);}const next=Math.random()*2000+1200;setTimeout(fireShootingStars,next);}setTimeout(createShootingStar,500);setTimeout(createShootingStar,1200);setTimeout(fireShootingStars,2200);</script>
+<div class="stars" id="starsLayer"></div>
+<div class="shoot-layer" id="shootLayer"></div>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a124902f4c5a0d14',t:'MTc4MjU2NDQ3Nw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body></html>
